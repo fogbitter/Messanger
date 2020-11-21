@@ -1,0 +1,198 @@
+﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
+for details on configuring this project to bundle and minify static web assets. */
+
+a.navbar-brand {
+  white-space: normal;
+  text-align: center;
+  word-break: break-all;
+}
+
+/* Provide sufficient contrast against white background */
+a {
+  color: #0366d6;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  font-size: 14px;
+}
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.border-top {
+  border-top: 1px solid #e5e5e5;
+}
+.border-bottom {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.box-shadow {
+  box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+}
+
+button.accept-policy {
+  font-size: 1rem;
+  line-height: inherit;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 60px;
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  white-space: nowrap;
+  line-height: 60px; /* Vertically center the text there */
+}
+
+/* Chat containers */
+.message {
+    border: 2px solid #dedede;
+    background-color: #f1f1f1;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+/* Darker chat container */
+.darker {
+    border-color: #ccc;
+    background-color: #ddd;
+}
+
+/* Clear floats */
+.message::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* Style images */
+.message img {
+    float: left;
+    max-width: 60px;
+    width: 100%;
+    margin-right: 20px;
+    border-radius: 50%;
+}
+
+/* Style the right image */
+.message img.right {
+    float: right;
+    margin-left: 20px;
+    margin-right: 0;
+}
+
+.message .right {
+    text-align:right;
+    margin-left: 20px;
+    margin-right: 0;
+}
+.message .left {
+    text-align: left;
+    margin-left: 20px;
+    margin-right: 0;
+}
+
+/* Style time text */
+.time-right {
+    text-align: right;
+    color: #aaa;
+}
+
+/* Style time text */
+.time-left {
+    text-align: left;
+    color: #999;
+}
+
+.chatWindow{
+    height:500px;
+    overflow-y: scroll;
+}
+
+.authorisationBack {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.5);
+}
+
+.loginForm, .signupForm, .dialogAddWindow {
+    width: 300px;
+    height: 400px;
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    margin: -125px 0 0 -125px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+.signupForm{
+    display:none;
+}
+
+.loginForm input, .signupForm input{
+    margin: 20px 0;
+}
+
+.loginForm button, .signupForm button{
+    width: 150px;
+}
+
+.dialogsWindow {
+    width: 300px;
+    height: 900px;
+    position: absolute;
+    border: 1px solid red;
+    border-radius: 3px;
+    top: 0px;
+    left: -280px;
+    padding: 20px;
+    transition:0.2s;
+    background-color:lightgray;
+}
+
+.dialogDeleteBtn {
+    width: 50px
+}
+
+.dialogsBack {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.5);
+    display:none;
+}

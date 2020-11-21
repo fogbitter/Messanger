@@ -1,0 +1,104 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+<div class="authorisationBack" tabindex="9999">
+    <div class="loginForm">
+        <h2>Авторизация</h2>
+        <div class="input-group">
+            <input type="text" class="form-control loginEmailInput" placeholder="Email" aria-label="Email" value="fogbitter@gmail.com" >
+        </div>
+        <div class="input-group">
+            <input type="text" class="form-control loginPasswordInput" placeholder="Password" aria-label="Password" value="1" >
+        </div>
+        <div class="input-group">
+            <div class="input-group-append">
+                <button class="btn btn-outline-secondary loginButton" type="button" onclick="login()">Login</button>
+            </div>
+            <div class="input-group-append">
+                <button class="btn btn-outline-secondary" type="button" onclick="toSignup()">Signup</button>
+            </div>
+        </div>
+    </div>
+    <div class="signupForm">
+        <h2>Регистрация</h2>
+        <div class="input-group">
+            <input type="text" class="form-control signupNameInput" placeholder="Name" aria-label="Name" value="fogbitter">
+        </div>
+        <div class="input-group">
+            <input type="text" class="form-control signupEmailInput" placeholder="Email" aria-label="Email" value="fogbitter@gmail.com">
+        </div>
+        <div class="input-group">
+            <input type="text" class="form-control signupPasswordInput" placeholder="Password" aria-label="Password" value="1">
+        </div>
+        <div class="input-group">
+            <div class="input-group-append">
+                <button class="btn btn-outline-secondary" type="button" onclick="signup()">Signup</button>
+            </div>
+            <div class="input-group-append">
+                <button class="btn btn-outline-secondary loginButton" type="button" onclick="toLogin()">Login</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="dialogsBack">
+    <div class="dialogAddWindow">
+        <h2>New dialog</h2>
+        <div class="input-group">
+            <input type="text" class="form-control addDialogNameInput" placeholder="Dialog" aria-label="Dialog">
+        </div>
+        <div class="input-group">
+            <input type="text" class="form-control addDialogUserInput" placeholder="User" aria-label="User">
+        </div>
+        <div class="addDialogUsers">
+        </div>
+        <div class="input-group">
+            <div class="input-group-append">
+                <button class="btn btn-outline-secondary" type="button" onclick="addDialogUserAdd()">Add user</button>
+            </div>
+            <div class="input-group-append">
+                <button class="btn btn-outline-secondary" type="button" onclick="addDialogSubmit()">Create dialog</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container-fluid row d-none" id="mainWindow">
+    <div class="col-2">
+        <button class="btn btn-light" type="button" id="btnAddDialog" onclick="onDialogAdd()">New Dialog</button>
+        <ul class="nav flex-column nav-pills dialogBoxWindow">
+            <li class="nav-item dialogBox">
+                <a class="nav-link active" href="#">Dialog 1</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Dialog 2</a>
+            </li>
+        </ul>
+    </div>
+    <div class="col-8">
+        <div class="chatWindow">
+            <div class="message">
+                <img src="/w3images/bandmember.jpg" alt="Avatar">
+                <p>Hello. How are you today?</p>
+                <span class="time-right">11:00</span>
+            </div>
+
+            <div class="message darker">
+                <img src="/w3images/avatar_g2.jpg" alt="Avatar" class="right">
+                <p>Hey! I'm fine. Thanks for asking!</p>
+                <span class="time-left">11:01</span>
+            </div>
+        </div>
+
+
+        @*<div class="inputGroup">
+                <input type="text" placeholder="Type message here" class="messageInput" />
+                <button class="sendButton" onclick="send()">send</button>
+            </div>*@
+
+        <div class="input-group">
+            <input type="text" class="form-control messageInput" placeholder="Message" aria-label="Message">
+            <div class="input-group-append">
+                <button class="btn btn-outline-secondary sendButton" type="button" onclick="send()">Send</button>
+            </div>
+        </div>
+    </div>
+</div>
